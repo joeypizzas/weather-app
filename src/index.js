@@ -1,3 +1,3 @@
-// Template index.js file
+// Weather app JS index
 
 import "./style.css";

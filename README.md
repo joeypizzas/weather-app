@@ -1,2 +1,3 @@
-# template-js
-Template repo for HTML/CSS/JS projects
+# Weather app
+
+Simple weather app by [joeypizzas](https://github.com/joeypizzas).
