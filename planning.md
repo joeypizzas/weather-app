@@ -21,8 +21,26 @@
 
 ## How do you plan to design the application state?
 
+- Async function that takes city input, gets weather data with it, creates an object with the result and then returns that object.
+- Function to process weather data. Takes object parameter (will invoke the async function getting weather data as param), reduces object to new object with only data needed for the app, and then returns that new object. This will include the weather icon SVG from visual crossing API.
+
 ## How do you plan to organize your project files?
+
+- HTML
+- CSS
+- JS index: initializes listeners on search bar and invokes initial weather for default location.
+- weatherData.js: application state module.
+- weatherForm.js: view module for form to get weather data.
+- showWeather.js: view module for showing weather data.
 
 ## What inputs will your program have? Will the user enter data or will you get input from somewhere else?
 
+- Only input is weather location from the user, which comes via a simple submit form.
+
 ## Given your inputs, what are the steps necessary to return the desired output?
+
+- Build UI skeleton with sections.
+- Write application state and test it in the console.
+- Hardcode UI to get styling down. Form will stay hardcoded. Weather card data will not.
+- Write function to add weather data to UI. Also to remove.
+- Add event listeners on form for style and then to add weather data to UI based on input.
