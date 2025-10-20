@@ -9,14 +9,13 @@
     <div id="main-container">
       <div id="header-container">Joey pizza's weather</div>
       <div id="app-container">
-        <form>
+        <form novalidate>
           <input
             id="location-input"
             type="text"
             name="location"
             placeholder="Enter a city or zip code"
-            pattern="^(?:[A-Za-z\u00C0-\u017F]+(?:[ \-'][A-Za-z\u00C0-\u017F]+)*|\d{5}(?:-\d{4})?)$
-            "
+            pattern="(?:[A-Za-z\u00C0-\u017F]+(?:[ \-'][A-Za-z\u00C0-\u017F]+)*(?:\s*,\s*[A-Za-z]{2})?|\d{5}(?:-\d{4})?)"
             required
             class="input-color"
           />
