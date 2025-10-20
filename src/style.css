@@ -6,6 +6,7 @@
   --card-background: #fff9f3;
   --footer-background: #f5ebd7;
   --primary-accent: #ffb347;
+  --primary-accent-click: #d98a1a;
   --secondary-accent: #6495ed;
   --primary-text: #2d2d2d;
 }
@@ -60,18 +61,18 @@ form {
 }
 
 input {
-  border-radius: 3px;
+  border-radius: 7px;
   border: 1px solid var(--primary-text);
-  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  padding: 0.6rem 0.9rem 0.6rem 0.9rem;
   font-size: 0.9rem;
 }
 
 .input-color {
-  border: 1px solid var(--primary-text);
+  border: 2px solid var(--primary-text);
 }
 
 .input-color-hover {
-  border: 1px solid var(--primary-accent);
+  border: 2px solid var(--primary-accent);
 }
 
 button {
@@ -87,6 +88,10 @@ button {
 
 .search-svg-color-hover {
   stroke: var(--primary-accent);
+}
+
+.search-svg-color-click {
+  stroke: var(--primary-accent-click);
 }
 
 #footer-container {
