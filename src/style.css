@@ -52,6 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 form {
@@ -92,6 +93,20 @@ button {
 
 .search-svg-color-click {
   stroke: var(--primary-accent-click);
+}
+
+#weather-card {
+  display: flex;
+  flex-direction: column;
+}
+
+#icon-and-temp {
+  display: flex;
+}
+
+img {
+  height: 3rem;
+  width: 3rem;
 }
 
 #footer-container {
