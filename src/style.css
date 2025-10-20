@@ -66,11 +66,27 @@ input {
   font-size: 0.9rem;
 }
 
+.input-color {
+  border: 1px solid var(--primary-text);
+}
+
+.input-color-hover {
+  border: 1px solid var(--primary-accent);
+}
+
 button {
   padding: 0;
   cursor: pointer;
   border: none;
   background-color: var(--main-background);
+}
+
+.search-svg-color {
+  stroke: var(--primary-text);
+}
+
+.search-svg-color-hover {
+  stroke: var(--primary-accent);
 }
 
 #footer-container {
