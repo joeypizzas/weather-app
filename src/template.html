@@ -8,7 +8,37 @@
   <body>
     <div id="main-container">
       <div id="header-container">Joey pizza's weather</div>
-      <div id="app-container"></div>
+      <div id="app-container">
+        <form>
+          <input
+            id="location-input"
+            type="text"
+            name="location"
+            placeholder="Enter a city or zip code"
+            pattern="^(?:[A-Za-z\u00C0-\u017F]+(?:[ \-'][A-Za-z\u00C0-\u017F]+)*|\d{5}(?:-\d{4})?)$
+            "
+            required
+          />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#2d2d2d"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="search-svg"
+            >
+              <path d="m21 21-4.34-4.34" />
+              <circle cx="11" cy="11" r="8" />
+            </svg>
+          </button>
+        </form>
+        <div id="weather-card"></div>
+      </div>
       <div id="footer-container">
         <div id="footer-text">
           Created by

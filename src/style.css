@@ -48,6 +48,29 @@ body {
 #app-container {
   flex: 1;
   background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  padding-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid var(--primary-text);
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: var(--main-background);
 }
 
 #footer-container {
