@@ -31,8 +31,6 @@ export async function processWeatherData(weatherData, location) {
     unprocessedWeatherData.currentConditions.humidity;
   processedWeatherData.uvIndex =
     unprocessedWeatherData.currentConditions.uvindex;
-  processedWeatherData.windspeed =
-    unprocessedWeatherData.currentConditions.windspeed;
   processedWeatherData.description = unprocessedWeatherData.description;
   processedWeatherData.icon = unprocessedWeatherData.currentConditions.icon;
 
