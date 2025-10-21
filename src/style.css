@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 4rem;
 }
 
 form {
@@ -98,15 +98,78 @@ button {
 #weather-card {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-background);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  border-radius: 7px;
+  gap: 1rem;
+  border: 2px solid var(--primary-accent);
+}
+
+#card-title {
+  color: var(--primary-text);
+  font-size: 1.75rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-accent);
+  padding-bottom: 0.25rem;
 }
 
 #icon-and-temp {
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--primary-accent);
+  padding-bottom: 0.25rem;
 }
 
 img {
   height: 3rem;
   width: 3rem;
+}
+
+#temp-and-conditions {
+  display: flex;
+  flex-direction: column;
+}
+
+#temp,
+#conditions {
+  font-size: 1.5rem;
+  color: var(--primary-text);
+  font-weight: 500;
+}
+
+#weather-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#feels-like,
+#description,
+#humidity,
+#uv {
+  font-size: 1.15rem;
+  color: var(--primary-text);
+}
+
+#feels-like,
+#description {
+  border-bottom: 2px solid var(--primary-accent);
+  padding-bottom: 0.25rem;
+}
+
+#humidity-and-uv {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#humidity {
+  border-right: 2px solid var(--primary-accent);
+  padding-right: 0.5rem;
 }
 
 #footer-container {
@@ -127,5 +190,5 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-accent);
+  color: var(--primary-accent);
 }
