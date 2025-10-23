@@ -1,5 +1,8 @@
 // Weather form view JS
 
+import { getWeatherData, processWeatherData } from "./weatherData.js";
+import { addDataToWeatherCard } from "./weatherCard.js";
+
 export function initFormListeners() {
   const form = document.querySelector("form");
   const input = document.querySelector("input");
@@ -47,6 +50,7 @@ export function initFormListeners() {
     searchSVG.classList.remove("search-svg-color-click");
     searchSVG.classList.add("search-svg-color-hover");
     if (form.checkValidity()) {
+      addDataToWeatherCard(processWeatherData, getWeatherData, input.value);
       input.value = "";
     } else {
       form.reportValidity();
