@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joey pizza's weather</title>
+  <script defer src="main.js"></script></head>
+  <body>
+    <div id="main-container">
+      <div id="header-container">Joey pizza's weather</div>
+      <div id="app-container">
+        <form novalidate>
+          <input
+            id="location-input"
+            type="text"
+            name="location"
+            placeholder="Enter a city or zip code"
+            pattern="(?:[A-Za-z\u00C0-\u017F]+(?:[ \-'][A-Za-z\u00C0-\u017F]+)*(?:\s*,\s*[A-Za-z]{2})?|\d{5}(?:-\d{4})?)"
+            required
+            class="input-color"
+          />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="search-svg search-svg-color"
+            >
+              <path d="m21 21-4.34-4.34" />
+              <circle cx="11" cy="11" r="8" />
+            </svg>
+          </button>
+        </form>
+        <div id="weather-card">
+          <div id="card-title">Brooklyn, NY</div>
+          <div id="date-and-time">October 26th, 2025 at 11:12am</div>
+          <div id="icon-and-temp">
+            <img src="6a85c352a68642b08c91.svg" alt="clear night" />
+            <div id="temp-and-conditions">
+              <div id="temp">56°F</div>
+              <div id="conditions">Clear</div>
+              <div></div>
+            </div>
+          </div>
+          <div id="weather-data">
+            <div id="feels-like">Feels like: 56°F</div>
+            <div id="description">
+              Similar temperatures continuing with a chance of rain tomorrow.
+            </div>
+            <div id="humidity-and-uv">
+              <div id="humidity">Humidity: 74%</div>
+              <div id="uv">UV index: 0 of 11</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container">
+        <div id="footer-text">
+          Created by
+          <a
+            href="https://github.com/joeypizzas"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            joeypizzas</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
