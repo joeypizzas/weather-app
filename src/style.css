@@ -52,7 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 3.5rem;
 }
 
 form {
@@ -109,18 +109,14 @@ button {
 
 #card-title {
   color: var(--primary-text);
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 600;
-  border-bottom: 2px solid var(--primary-accent);
-  padding-bottom: 0.25rem;
 }
 
 #icon-and-temp {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  border-bottom: 2px solid var(--primary-accent);
-  padding-bottom: 0.25rem;
 }
 
 img {
@@ -134,7 +130,8 @@ img {
 }
 
 #temp,
-#conditions {
+#conditions,
+#date-and-time {
   font-size: 1.5rem;
   color: var(--primary-text);
   font-weight: 500;
@@ -156,6 +153,9 @@ img {
   color: var(--primary-text);
 }
 
+#card-title,
+#date-and-time,
+#icon-and-temp,
 #feels-like,
 #description {
   border-bottom: 2px solid var(--primary-accent);
