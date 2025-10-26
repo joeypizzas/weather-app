@@ -11,6 +11,7 @@ export async function addDataToWeatherCard(
   );
 
   const cardTitle = document.querySelector("#card-title");
+  const dateAndTime = document.querySelector("#date-and-time");
   const img = document.querySelector("img");
   const temp = document.querySelector("#temp");
   const conditions = document.querySelector("#conditions");
@@ -20,6 +21,7 @@ export async function addDataToWeatherCard(
   const uv = document.querySelector("#uv");
 
   cardTitle.textContent = weatherData.location;
+  dateAndTime.textContent = weatherData.date;
   temp.textContent = `${weatherData.temperature}°F`;
   conditions.textContent = weatherData.conditions;
   feelsLike.textContent = `Feels like: ${weatherData.feelsLike}°F`;
