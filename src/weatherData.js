@@ -37,5 +37,17 @@ export async function processWeatherData(weatherData, location) {
   processedWeatherData.description = unprocessedWeatherData.description;
   processedWeatherData.icon = unprocessedWeatherData.currentConditions.icon;
 
+  const rawDate = unprocessedWeatherData.currentConditions.datetimeEpoch;
+  const dateObj = new Date(rawDate * 1000);
+  const formattedDate = dateObj.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    hour12: true,
+  });
+  processedWeatherData.date = formattedDate;
+
   return processedWeatherData;
 }
