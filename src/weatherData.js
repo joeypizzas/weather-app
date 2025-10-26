@@ -23,12 +23,15 @@ export async function processWeatherData(weatherData, location) {
   processedWeatherData.location = unprocessedWeatherData.resolvedAddress;
   processedWeatherData.conditions =
     unprocessedWeatherData.currentConditions.conditions;
-  processedWeatherData.temperature =
-    unprocessedWeatherData.currentConditions.temp;
-  processedWeatherData.feelsLike =
-    unprocessedWeatherData.currentConditions.feelslike;
-  processedWeatherData.humidity =
-    unprocessedWeatherData.currentConditions.humidity;
+  processedWeatherData.temperature = Math.round(
+    unprocessedWeatherData.currentConditions.temp,
+  );
+  processedWeatherData.feelsLike = Math.round(
+    unprocessedWeatherData.currentConditions.feelslike,
+  );
+  processedWeatherData.humidity = Math.round(
+    unprocessedWeatherData.currentConditions.humidity,
+  );
   processedWeatherData.uvIndex =
     unprocessedWeatherData.currentConditions.uvindex;
   processedWeatherData.description = unprocessedWeatherData.description;
