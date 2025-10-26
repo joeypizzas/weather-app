@@ -29,5 +29,6 @@ export async function addDataToWeatherCard(
 
   const iconModule = await import(`./icons/${weatherData.icon}.svg`);
   const iconURL = iconModule.default;
-  img.innerHTML = `<img src="${iconURL}" alt="${weatherData.icon} icon" />`;
+  img.src = iconURL;
+  img.alt = weatherData.icon;
 }
